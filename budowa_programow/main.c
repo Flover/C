@@ -8,14 +8,13 @@
 
 int n;
 
-int main()
-{
-    wczytaj_wymiar_macierzy(n);
-    float macierz[n][n];
-    wczytaj_macierz(n, macierz);
+int main(){
+  wczytaj_wymiar_macierzy(n);
+  float macierz[n][n];
+  wczytaj_macierz(n, macierz);
 
-    printf("%f", wyznacznik(n, macierz));
-    printf("\n");
+  printf("%f", wyznacznik(n, macierz));
+  printf("\n");
 
-    return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }
