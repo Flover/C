@@ -1,0 +1,1 @@
+int rok_obecny();
