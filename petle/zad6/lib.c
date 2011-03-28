@@ -29,6 +29,6 @@ void sortuj(float tab[6])
 void wypisz(float tab[6])
 {
     printf
-	(" Najwieksza liczba to:  %.2f \n Najmniejsza liczba to:  %.2f \n",
-	 tab[5], tab[0]);
+	(" Najmniejsza liczba to:  %.2f \n Najwieksza liczba to:  %.2f \n",
+	 tab[0], tab[5]);
 }
