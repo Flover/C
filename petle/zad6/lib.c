@@ -4,10 +4,10 @@ void wczytaj(float tab[6])
 {
     int i;
     printf("Podaj szesc liczb\n");
-	for (i = 1; i < 7; i++) {
-	    printf("Podaj %i liczbe: ", i);
-	    scanf("%f", &tab[i-1]);
-            
+    for (i = 1; i < 7; i++) {
+	printf("Podaj %i liczbe: ", i);
+	scanf("%f", &tab[i - 1]);
+
     }
 }
 void sortuj(float tab[6])
@@ -28,5 +28,7 @@ void sortuj(float tab[6])
 
 void wypisz(float tab[6])
 {
-    printf(" max = %.2f \n min = %.2f \n", tab[5], tab[0]);
+    printf
+	(" Najwieksza liczba to:  %.2f \n Najmniejsza liczba to:  %.2f \n",
+	 tab[5], tab[0]);
 }
