@@ -2,19 +2,19 @@
 
 
 /* oblicz kwadrat liczby n */
-void kwadrat(int *n)
-{
+void kwadrat(int k, int *n){
+*n = k * k;
 }
-void wczytaj_liczbe(int *n)
-{
+void wczytaj_liczbe(int *n){
     printf("Wpisz liczbę naturalną: ");
+    scanf("%d", n );
 }
 
 int main()
 {
-    int liczba = 2, wynik = 4;
+    int liczba, wynik;
     wczytaj_liczbe(&liczba);
-    kwadrat(&wynik);
+    kwadrat(liczba, &wynik);
     printf("\nPodano liczbe: %d, jej kwadrat to: %d\n", liczba, wynik);	/* wypisz wczytaną liczbę oraz jej kwadrat */
     return 0;
 }
